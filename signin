@@ -1,0 +1,110 @@
+BigRock
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/charsoasi"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="167dp"
+        android:text="NAME"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff9900" />
+
+    <EditText
+        android:id="@+id/edname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/name"
+        android:layout_toRightOf="@+id/reppass"
+        android:ems="10"
+        android:textColor="#ff9900" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/emailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_centerVertical="true"
+        android:text="EMAIL ID"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff9900" />
+
+    <EditText
+        android:id="@+id/edemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/emailid"
+        android:layout_alignBottom="@+id/emailid"
+        android:layout_alignLeft="@+id/edname"
+        android:ems="10"
+        android:textColor="#ff9900" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailid"
+        android:layout_below="@+id/edemail"
+        android:layout_marginTop="27dp"
+        android:text="PASSWORD"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff9900" />
+
+    <EditText
+        android:id="@+id/edpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/password"
+        android:layout_alignBottom="@+id/password"
+        android:layout_alignLeft="@+id/edemail"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#ff9900" />
+
+    <TextView
+        android:id="@+id/reppass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password"
+        android:layout_below="@+id/edpass"
+        android:layout_marginTop="25dp"
+        android:text="RE PASSWORD"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff9900" />
+
+    <EditText
+        android:id="@+id/edrepass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/reppass"
+        android:layout_alignLeft="@+id/edpass"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#ff9900" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reppass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="SUBMIT"
+        android:textColor="#ff9900" />
+
+</RelativeLayout>
+BigRock
