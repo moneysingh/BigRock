@@ -1,0 +1,70 @@
+BigRock
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/charsoasi"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/usrnme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="196dp"
+        android:text="USERNAME"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff9900" />
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usrnme"
+        android:layout_below="@+id/usrnme"
+        android:layout_marginTop="40dp"
+        android:text="PASSWORD"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff9900" />
+
+    <EditText
+        android:id="@+id/eusrnam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/usrnme"
+        android:layout_alignBottom="@+id/usrnme"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:ems="10"
+        android:textColor="#ff9900"
+        android:width="150dp" />
+
+    <EditText
+        android:id="@+id/epass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pass"
+        android:layout_alignLeft="@+id/eusrnam"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#ff9900" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/signn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:layout_toRightOf="@+id/usrnme"
+        android:text="SIGN IN"
+        android:textColor="#ff9900" />
+
+</RelativeLayout>
+BigRock
