@@ -1,0 +1,55 @@
+BigRock
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/charsoasi"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/amnttopay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="AMOUNT TO PAY"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff9900" />
+
+    <TextView
+        android:id="@+id/rpee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="  "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff9900" />
+
+    <TextView
+        android:id="@+id/rupee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rpee"
+        android:layout_alignBottom="@+id/rpee"
+        android:layout_marginRight="21dp"
+        android:layout_toLeftOf="@+id/rpee"
+        android:text="Rs."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff9900" />
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rpee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:text="PAY"
+        android:textColor="#ff9900" />
+
+</RelativeLayout>
+BigRock
