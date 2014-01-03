@@ -1,0 +1,70 @@
+BigRock
+=======
+package com.example.bigrock;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.ImageButton;
+
+public class BigRock extends Activity implements OnClickListener {
+	
+	EditText etsrch;
+	CheckBox com,in,net,other;
+	ImageButton imgsrch;
+	
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_big_rock);
+		
+		etsrch= (EditText)findViewById(R.id.editserch);
+		com= (CheckBox) findViewById(R.id._com);
+		in= (CheckBox) findViewById(R.id._in);
+		net=(CheckBox) findViewById(R.id._net);
+		other=(CheckBox) findViewById(R.id.other);
+		imgsrch=(ImageButton) findViewById(R.id.serch);
+		imgsrch.setOnClickListener(this);
+		com.setChecked(true);
+		
+		
+		
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.big_rock, menu);
+		return true;
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
+		Intent i = new Intent(this,CongActivity.class);
+		startActivity(i);
+		
+		
+	}
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+	    if (keyCode == KeyEvent.KEYCODE_BACK) {
+	        //do whatever you need for the hardware 'back' button
+	    		finish();
+	        return true;
+	    }
+	    return super.onKeyDown(keyCode, event);
+	}
+	
+}
+
+
+BigRock
